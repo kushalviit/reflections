@@ -1,0 +1,7 @@
+ What happens when you initialize a repository? Why do you need to do it?
+     On initializing a repository by using 'git init', one can see a hidden folder .git being created. This is an empty repository with 
+     zero commits and git HEAD uninitialized. Thus giving error on running git log. We can check if it is empty by running git status.
+     We need to intialize a repositry to create a repository where we can add our commits with respective messages
+How is a staging area different from working directory and repository?
+What value do you think it offers?
+    Staging area acts as a temporary place where one can work on set of files undergoing changes during a commit while working directory contains can contain untracked files and repository contains tracked files.During the intial commit or subsequent commits, there are chances that multiple files are changed for a same logic or due to data dependency in a file which is not in repository. In these cases multiple files need to be added/commited to the repository at same time by adding the files in a staging area one can store all the files that can be commited once all logical changes are made.
