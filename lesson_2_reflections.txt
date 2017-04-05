@@ -9,3 +9,6 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical change?
      We can make changes to all files having descripency with the same logical change and then add all the related changed files to staging area. use git diff/git diff --staged to see changes then commit the change.This leaves out all the files which were unchanged to their original content.
+
+ What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+      When we need to add experimental features of which we are not sure of the outcome or while creating a different language version for different audiance. Branches would be having labels and commit messages which will help in understanding why that branch was created while allowing the main branch to go ahead with the fixes and finally combine the bug fix with the new experimental features
