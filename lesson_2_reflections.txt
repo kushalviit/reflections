@@ -1,20 +1,31 @@
  What happens when you initialize a repository? Why do you need to do it?
+
      On initializing a repository by using 'git init', one can see a hidden folder .git being created. This is an empty repository with 
      zero commits and git HEAD uninitialized. Thus giving error on running git log. We can check if it is empty by running git status.
      We need to intialize a repositry to create a repository where we can add our commits with respective messages
 
 How is a staging area different from working directory and repository?
 What value do you think it offers?
+
     Staging area acts as a temporary place where one can work on set of files undergoing changes during a commit while working directory contains can contain untracked files and repository contains tracked files.During the intial commit or subsequent commits, there are chances that multiple files are changed for a same logic or due to data dependency in a file which is not in repository. In these cases multiple files need to be added/commited to the repository at same time by adding the files in a staging area one can store all the files that can be commited once all logical changes are made.
 
 How can you use the staging area to make sure you have one commit per logical change?
+
      We can make changes to all files having descripency with the same logical change and then add all the related changed files to staging area. use git diff/git diff --staged to see changes then commit the change.This leaves out all the files which were unchanged to their original content.
 
  What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
       When we need to add experimental features of which we are not sure of the outcome or while creating a different language version for different audiance. Branches would be having labels and commit messages which will help in understanding why that branch was created while allowing the main branch to go ahead with the fixes and finally combine the bug fix with the new experimental features
 
 How do the diagrams help you visualize the branch structure?
+
      git log --graph --online bn1 bn2 bn3 ... will help visualize the branch structure. It helps in knowing reachable branches and knowing the parent of each branch/node. It also helps in giving us a caution of loosing a commit at unkown position in tree if commit left unnamed by git checkout -b new_branch_name
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
      Merging two branches results in a new commit while retaining the changes in both the branch while deleting the lines which was removed in one of the branches. since it belongs to both the parents of both branches we represent it in the diagram as told and git branch -d branch name deletes branch name and git show with commit id shows difference with respect to parent node and git merge merges branches
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+    Pros of Automatic merging vs. manual merges: Easy as it reduces coding, time efficient for small non conflicting changes.
+    cons of Automatic merging vs. manual merges: Automatic merges tend to have conflicts, careful evaulation of the changes made by the merge command needs to be evaluated
