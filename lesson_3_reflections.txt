@@ -29,3 +29,11 @@ be harder?
 
     We could use one drive or other storage space. but since there is no possiblity of pull 
     request one drive would be harder.
+
+When would you want to make changes in a separate branch rather than directly in master? 
+What benefits does each approach have?
+    When there is main components of features of a program getting changed then a separete 
+    branch is created rather than directly changing in master. Any errors can be spoted by 
+    reviewer/contributor and can request for changes and when changes are done and pushed it
+    can be merged on github.
+    
