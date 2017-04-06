@@ -12,3 +12,6 @@ How can you use the staging area to make sure you have one commit per logical ch
 
  What are some situations when branches would be helpful in keeping your history organized? How would branches help?
       When we need to add experimental features of which we are not sure of the outcome or while creating a different language version for different audiance. Branches would be having labels and commit messages which will help in understanding why that branch was created while allowing the main branch to go ahead with the fixes and finally combine the bug fix with the new experimental features
+
+How do the diagrams help you visualize the branch structure?
+     git log --graph --online bn1 bn2 bn3 ... will help visualize the branch structure. It helps in knowing reachable branches and knowing the parent of each branch/node. It also helps in giving us a caution of loosing a commit at unkown position in tree if commit left unnamed by git checkout -b new_branch_name
