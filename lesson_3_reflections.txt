@@ -23,3 +23,9 @@ What is the benefit of having a copy of the last known state of the remote store
 
     If the last known state of the remote is stored locally then we can get to know if there
     was any change that was made in both local and remote if any present.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would 
+be harder?
+
+    We could use one drive or other storage space. but since there is no possiblity of pull 
+    request one drive would be harder.
