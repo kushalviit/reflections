@@ -18,3 +18,8 @@ of another?
     Fork copies an existing repository from the repository within github to our location of 
     repositories. clone is to copy repository from github or local git to local git.
     branches create new commits when additional featues or contributions are made
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+    If the last known state of the remote is stored locally then we can get to know if there
+    was any change that was made in both local and remote if any present.
