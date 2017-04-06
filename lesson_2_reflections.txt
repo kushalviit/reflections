@@ -15,3 +15,6 @@ How can you use the staging area to make sure you have one commit per logical ch
 
 How do the diagrams help you visualize the branch structure?
      git log --graph --online bn1 bn2 bn3 ... will help visualize the branch structure. It helps in knowing reachable branches and knowing the parent of each branch/node. It also helps in giving us a caution of loosing a commit at unkown position in tree if commit left unnamed by git checkout -b new_branch_name
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+     Merging two branches results in a new commit while retaining the changes in both the branch while deleting the lines which was removed in one of the branches. since it belongs to both the parents of both branches we represent it in the diagram as told and git branch -d branch name deletes branch name and git show with commit id shows difference with respect to parent node and git merge merges branches
