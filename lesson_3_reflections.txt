@@ -12,3 +12,9 @@ stay up-to-date with your remote repository?
     frequent update in different branch which is not relavent to my current branch for the given 
     time so it is better to pull changes manaully as and when need be.
 
+Describe the differences between forks, clones, and branches. When would you use one instead 
+of another?
+    
+    Fork copies an existing repository from the repository within github to our location of 
+    repositories. clone is to copy repository from github or local git to local git.
+    branches create new commits when additional featues or contributions are made
