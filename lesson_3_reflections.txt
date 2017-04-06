@@ -1,5 +1,14 @@
 When would you want to use a remote repository rather than keeping all your work local?
+
     When the most recent commit made is in working or presentable condition, I would use
     remote repository rather than local repository,i.e. go public. Otherwise when some one
     else has made a significant contribution which is logical then I would go to remote repo
     than work local
+
+Why might you want to always pull changes manually rather than having Git automatically 
+stay up-to-date with your remote repository?
+
+    There may be more than one contributors for a project/repository and there might be 
+    frequent update in different branch which is not relavent to my current branch for the given 
+    time so it is better to pull changes manaully as and when need be.
+
